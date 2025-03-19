@@ -15,7 +15,7 @@ public class Launch {
 		 Triangle t = new Triangle();
 		 t.collectData();
 		 t.calculateData();
-		 t.displayData();
+		 t .displayData();
 	}
 
 }
