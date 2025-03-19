@@ -1,10 +1,11 @@
 package abstract_;
 
-public class Triangle extends Shapes{
+public class Triangle implements Shaper{
 	double length;
 	double base;
+	double area;
 	@Override
-	void collectData() {
+	public void collectData() {
 		System.out.println("Enter the length: ");
 		length = sc.nextDouble();
 		System.out.println("Enter the base: ");
@@ -13,12 +14,12 @@ public class Triangle extends Shapes{
 	}
 
 	@Override
-	void calculateData() {
+	public void calculateData() {
 		area= 0.5*length*base;
 	}
 
 	@Override
-	void displayData() {
+	public void displayData() {
 		System.out.println("The area of Trinagle is : "+area);
 	}
 

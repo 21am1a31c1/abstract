@@ -1,23 +1,24 @@
 package abstract_;
 
-class Circle extends Shapes {
+class Circle implements Shaper {
     double radius;
+    double area;
     final static double pi=3.142; 
 	@Override
-	void collectData() {
+	public void collectData(){
 		// TODO Auto-generated method stub
 		System.out.println("Enter the radius: ");
 		radius = sc.nextDouble();
 	}
 
 	@Override
-	void calculateData() {
+	public void calculateData() {
 		// TODO Auto-generated method stub
 		area= pi*radius*radius;
 	}
 
 	@Override
-	void displayData() {
+	public void displayData() {
 		// TODO Auto-generated method stub
 		System.out.println("The area of circle is : "+area);
 	}

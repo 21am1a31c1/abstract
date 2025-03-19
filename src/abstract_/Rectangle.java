@@ -1,10 +1,11 @@
 package abstract_;
 
-public class Rectangle extends Shapes{
+public class Rectangle implements Shaper{
 	double length;
 	double width;
+	double area;
 	@Override
-	void collectData() {
+	public void collectData() {
 		System.out.println("Enter the length: ");
 		length = sc.nextDouble();
 		System.out.println("Enter the width: ");
@@ -12,12 +13,12 @@ public class Rectangle extends Shapes{
 	}
 
 	@Override
-	void calculateData() {
+	public void calculateData() {
 		area=length*width;
 	}
 
 	@Override
-	void displayData() {
+	public void displayData() {
 		System.out.println("The area of Rectangle is : "+area);
 		
 	}
